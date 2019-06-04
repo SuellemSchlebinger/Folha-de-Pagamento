@@ -1,0 +1,13 @@
+FUNCIONALIDADE: Cadastro de funcionários para gerar folha de pagamento.
+o sistema deve prover o controle de funcionários por meio da busca, 
+Dado que o sistema não tem o funcionário, o usuário poderá fazer
+o cadastro. O sistema liberará o cadastro, assim que o usuário preencher as informações
+solicitadas pelo sistema.
+
+Cenario: Cadastro de funcionário
+Dado que o usuario queira cadastrar um funcionário 
+E o mesmo tenha cargo de Assistente Administrativo
+Quando ele incluir o Nome completo
+E inserir o CPF, RG, Data de Nascimento, Endereço Cargo e Salário bruto
+Então aparecerá a vizualização do cadastro
+E por fim será cadastrado
