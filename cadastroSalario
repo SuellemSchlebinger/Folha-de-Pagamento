@@ -1,7 +1,7 @@
 from Salario import Salario_1
 
 class Funcionario:
-    def __init__(self, nome, cpf, rg, dataNasc, endereco, cargo, telefone):
+    def __init__(self, nome, cpf, rg, dataNasc, endereco, cargo, telefone, salario_bruto):
         self.nome = nome
         self.cpf = cpf
         self.rg = rg
@@ -9,14 +9,18 @@ class Funcionario:
         self.endereco = endereco
         self.cargo = cargo
         self.telefone = telefone
+        self.salario_bruto = salario_bruto
 
 
-    def salario (self, salariofuncioario):
+    def salario (self, salario_bruto):
         self.salario_bruto = salariofuncioario
 
 
-sal = Salario_1(5000)
+funcionario = Funcionario(str(input('Nome:')), int(input('CPF:')), int(input('RG:')), int(input('DataNasc')), str(input('Endereço:')), str(input('Cargo:')), int(input('Telefone:')), float(input('Salario:')))
 
+sal = Salario_1(Funcionario.salario())  #se substituir 'Funcionario.salario()'por um valor qualquer ex:1600, a folha de pagamento abaixo sai correta
+
+                                        #Mas o objetivo é de acordo com o salario do funcionario, colocado acima, conseguirmos gerar a folha d epagamento
 print('--------------------------\n'
       '   FOLHA DE PAGAMENTO   \n'
       '---------------------------\n')
