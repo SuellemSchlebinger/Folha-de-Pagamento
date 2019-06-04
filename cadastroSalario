@@ -1,0 +1,26 @@
+from Salario import Salario_1
+
+class Funcionario:
+    def __init__(self, nome, cpf, rg, dataNasc, endereco, cargo, telefone):
+        self.nome = nome
+        self.cpf = cpf
+        self.rg = rg
+        self.dataNasc = dataNasc
+        self.endereco = endereco
+        self.cargo = cargo
+        self.telefone = telefone
+
+
+    def salario (self, salariofuncioario):
+        self.salario_bruto = salariofuncioario
+
+
+sal = Salario_1(5000)
+
+print('--------------------------\n'
+      '   FOLHA DE PAGAMENTO   \n'
+      '---------------------------\n')
+print('Salario Bruto:', sal)
+print('INSS:', sal.inss1())
+print('IRRF:', sal.irrf1())
+print('Salario Liquido', sal.salarioliquido())
