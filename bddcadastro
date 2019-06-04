@@ -11,3 +11,38 @@ Quando ele incluir o Nome completo
 E inserir o CPF, RG, Data de Nascimento, Endereço Cargo e Salário bruto
 Então aparecerá a vizualização do cadastro
 E por fim será cadastrado
+
+
+Historia de usuario:
+Como um gerente
+Eu quero atribuir o Salario dos funcionarios
+Para que eu possa emitir a folha de pagamento com seus devidos descontos
+
+Cenario: Teste Folha de pagamento
+Dado que o Cadastro de funcionario foi concluido
+E o salario bruto foi atribuido como 1600
+Quando for selecionada a opção de 'Gerar folha de pagamento'
+O sistema deve gerar automaticamente a folha de pagamento do funcionario
+
+
+Historia de usuario:
+Como um gerente
+Eu quero atribuir o Salario dos funcionarios
+Para que eu possa emitir a folha de pagamento com seus devidos descontos
+
+Cenario: Teste Folha de pagamento
+Dado que o Cadastro de funcionario foi concluido
+E o salario bruto foi atribuido como 2400
+Quando for selecionada a opção de 'Gerar folha de pagamento'
+O sistema deve gerar automaticamente a folha de pagamento do funcionario
+
+Historia de usuario:
+Como um gerente
+Eu quero atribuir o Salario dos funcionarios
+Para que eu possa emitir a folha de pagamento com seus devidos descontos
+
+Cenario: Teste Folha de pagamento
+Dado que o Cadastro de funcionario foi concluido
+E o salario bruto foi atribuido como 5000
+Quando for selecionada a opção de 'Gerar folha de pagamento'
+O sistema deve gerar automaticamente a folha de pagamento do funcionario
